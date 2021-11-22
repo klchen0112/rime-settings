@@ -1,0 +1,11 @@
+patch:
+  app_setting:
+    candidate_tool_bar_is_show_pasteboard: true
+    is_open_word_association: true
+    candidate_preedit_type: 2
+    candidate_tool_bar_is_show_schema_switcher: true
+    play_key_voice_volume: 0.3394231
+    is_show_candidate_comment: true
+    candidate_tool_bar_is_show_emoji: false
+    theme_name: Catflypy
+    play_key_voice_name: default.caf

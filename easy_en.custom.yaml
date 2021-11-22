@@ -1,0 +1,4 @@
+patch:
+  # easy_en/use_wordninja_rs: true
+  # easy_en/wordninja_rs_path: "/Users/chenkailong/Library/wordninja-rs/target/release/wordninja"
+  easy_en/translator/dictionary: easy_en.extended

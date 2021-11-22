@@ -1,0 +1,12 @@
+*~
+.*~
+/luna_pinyin.userdb/*
+/build/*
+/user.yaml
+/installation.yaml
+opencc/.DS_Store
+.DS_Store
+/easy_en.userdb/*
+/double_pinyin_flypy.userdb/*
+*.zip
+private_phrase.txt
