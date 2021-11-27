@@ -3,6 +3,7 @@
 name: car
 version: "1"
 sort: by_weight
+use_preset_vocabulary: false
 ...
 轿车	jiao che	1424796
 二手车	er shou che	1112665

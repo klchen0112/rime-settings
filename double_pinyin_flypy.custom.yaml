@@ -81,7 +81,7 @@ patch:
   kaomoji_suggestion:
     opencc_config: kaomoji.json
     option_name: kaomoji_suggestion
-    # tips: all
+    tips: all
   # 自定义符号上屏
   punctuator:
     import_preset: symbols
@@ -106,7 +106,7 @@ patch:
     dictionary: ""
     user_dict: custom_phrase
     db_class: stabledb
-    enable_completion: true
+    enable_completion: false
     enable_sentence: false
     # sentence_over_completion: true
     initial_quality: 0.5
@@ -123,9 +123,9 @@ patch:
     spelling_hints: 9
     enable_completion: true # 是否启用英文输入联想补全
     enable_user_dict: true # 用户词典、词序自动调频
-    # enable_encoder: true # 自动造词
+    enable_encoder: true # 自动造词
     enable_sentence: true # 自动造句
-    # encode_commit_history: true # 对已上屏的内容自动造词
+    encode_commit_history: true # 对已上屏的内容自动造词
     initial_quality: -0.5
   # ascii_composer:
   #   switch_key:

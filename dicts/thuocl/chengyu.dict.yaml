@@ -3,6 +3,7 @@
 name: chengyu
 version: "1"
 sort: by_weight
+use_preset_vocabulary: false
 ...
 坚定不移	jian ding bu yi	54113
 随时随地	sui shi sui di	52510

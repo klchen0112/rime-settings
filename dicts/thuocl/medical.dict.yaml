@@ -3,6 +3,7 @@
 name: medical
 version: "1"
 sort: by_weight
+use_preset_vocabulary: false
 ...
 精神	jing shen	606946
 医院	yi yuan	580436

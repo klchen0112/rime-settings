@@ -98,6 +98,6 @@ OpenCV	opencv	0
 # GTD
 TODO	todo
 DOING	doing
-DONE done
+DONE	done
 # APP
 QQ	qq

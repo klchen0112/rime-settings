@@ -3,6 +3,7 @@
 name: food
 version: "1"
 sort: by_weight
+use_preset_vocabulary: false
 ...
 土豆	tu dou	1777511
 苹果	ping guo	1143881

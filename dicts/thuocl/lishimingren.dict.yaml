@@ -3,6 +3,7 @@
 name: lishimingren
 version: "1"
 sort: by_weight
+use_preset_vocabulary: false
 ...
 毛泽东	mao ze dong	61678
 胡锦涛	hu jin tao	58429

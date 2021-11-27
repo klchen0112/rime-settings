@@ -3,6 +3,7 @@
 name: diming
 version: "1"
 sort: by_weight
+use_preset_vocabulary: false
 ...
 北京	bei jing	1119506
 美国	mei guo	864762
