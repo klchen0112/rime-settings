@@ -44,9 +44,9 @@ import_tables:
   # sogou词库
   - "dicts/sogou/arknights"
   - "dicts/sogou/wang_luo_liu_xing_xin_ci"
-  - "dicts/sogou/sogouw"
-  - "dicts/sogou/standard" # 搜狗标准
+  # - "dicts/sogou/sogouw"
+  # - "dicts/sogou/standard" # 搜狗标准
   - "dicts/melt_pinyin/melt_chs"
   - "dicts/wiki/pinyin_simp_moe"
-  - "dicts/wiki/pinyin_simp_wiki"
+  # - "dicts/wiki/pinyin_simp_wiki"
   # - "dicts/zhwiki"

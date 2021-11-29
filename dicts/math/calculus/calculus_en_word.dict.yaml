@@ -1,3 +1,8 @@
+# Rime dictionary
+# mim: set ts=8 sw=8 noet:
+# encoding: utf-8
+# klchen0112 <klchen0112@gmail.com>
+
 ---
 name: calculus_en_word
 version: "2021.10.13"
@@ -42,7 +47,7 @@ accumulation	accumulation	1
 trapezoid	trapezoid	1
 parametric	parametric	1
 axis	axis	1
-l’hospital’s	lhospitals	1
+l'hospital's	lhospitals	1
 value	value	1
 length	length	1
 is	is	1
@@ -60,7 +65,7 @@ phenomenon	phenomenon	1
 composite	composite	1
 derivative	derivative	1
 gradient	gradient	1
-d’alembert	dalembert	1
+d'alembert	dalembert	1
 range	range	1
 inplicit	inplicit	1
 additivity	additivity	1
@@ -255,7 +260,7 @@ condition	condition	1
 boundary	boundary	1
 gauss	gauss	1
 force	force	1
-euler’s	eulers	1
+euler's	eulers	1
 steady	steady	1
 natural	natural	1
 spherical	spherical	1
@@ -277,7 +282,7 @@ integrals	integrals	1
 directrix	directrix	1
 bijection	bijection	1
 independent	independent	1
-lagrange’s	lagranges	1
+lagrange's	lagranges	1
 boundedness	boundedness	1
 sufficient	sufficient	1
 downward	downward	1
@@ -297,7 +302,7 @@ table	table	1
 rectangle	rectangle	1
 injection	injection	1
 modulus	modulus	1
-fermat’s	fermats	1
+fermat's	fermats	1
 open	open	1
 interior	interior	1
 pointdirection	pointdirection	1
@@ -384,7 +389,7 @@ left	left	1
 projecting	projecting	1
 component	component	1
 figure	figure	1
-maclaurin’s	maclaurins	1
+maclaurin's	maclaurins	1
 infinite	infinite	1
 (cartesian	cartesian	1
 frequency	frequency	1
@@ -400,7 +405,7 @@ homogeneour	homogeneour	1
 constant	constant	1
 from	from	1
 equation	equation	1
-rolle’s	rolles	1
+rolle's	rolles	1
 ratio	ratio	1
 system	system	1
 octant	octant	1
@@ -429,7 +434,7 @@ normal	normal	1
 law	law	1
 decreasing	decreasing	1
 lower	lower	1
-cauchy’s	cauchys	1
+cauchy's	cauchys	1
 smooth	smooth	1
 implicit	implicit	1
 peano	peano	1
@@ -445,7 +450,7 @@ converge	converge	1
 surjection	surjection	1
 decay	decay	1
 curved	curved	1
-green’s	greens	1
+green's	greens	1
 analysis	analysis	1
 bound	bound	1
 least	least	1
@@ -462,7 +467,7 @@ euler	euler	1
 perpendicular	perpendicular	1
 flux	flux	1
 auxiliary	auxiliary	1
-taylor’s	taylors	1
+taylor's	taylors	1
 sine	sine	1
 forced	forced	1
 vertical	vertical	1

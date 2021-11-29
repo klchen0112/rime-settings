@@ -1,4 +1,12 @@
 patch:
-  # easy_en/use_wordninja_rs: true
-  # easy_en/wordninja_rs_path: "/Users/chenkailong/Library/wordninja-rs/target/release/wordninja"
-  easy_en/translator/dictionary: easy_en.extended
+  easy_en/use_wordninja_rs: true
+  easy_en/wordninja_rs_path: "/Users/chenkailong/Library/wordninja-rs/target/release/wordninja"
+  translator:
+    dictionary: easy_en.extended
+    enable_user_dict: true # 用户词典、词序自动调频
+    enable_encoder: true # 自动造词
+    enable_sentence: true # 自动造句
+    enable_completion: true # 自动补全
+    enable_charset_filter: true #启用罕见字過濾
+    enable_correction: false # 拼写纠错
+    encode_commit_history: true # 对已上屏的内容自动造词

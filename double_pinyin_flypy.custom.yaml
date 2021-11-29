@@ -30,14 +30,14 @@ patch:
     #   reset: 0 #     默认 UTF
   engine:
     translators:
+      - table_translator@easy_en
+      - table_translator@custom_phrase
+      - table_translator@private_phrase
       - punct_translator
       - script_translator
       - lua_translator@date_translator
       - lua_translator@week_translator
       - lua_translator@time_translator
-      - table_translator@easy_en
-      - table_translator@custom_phrase
-      - table_translator@private_phrase
       # - reverse_lookup_translator # ※ 反查翻譯器，用另一種編碼方案查碼
     filters:
       # - cjk_minifier #过滤拼音输入法中罕用字
@@ -119,7 +119,7 @@ patch:
     # sentence_over_completion: true
     initial_quality: 1
   easy_en:
-    dictionary: easy_en
+    dictionary: easy_en.extended
     spelling_hints: 9
     enable_completion: true # 是否启用英文输入联想补全
     enable_user_dict: true # 用户词典、词序自动调频
@@ -196,7 +196,7 @@ patch:
       - xform/ui$/V/
       - xform/in$/B/
       - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/ # 最後把雙拼碼全部變小寫
-      - abbrev/^(.).+$/$1/ # 简拼(首字母)
+      # - abbrev/^(.).+$/$1/ # 简拼(首字母)
   # 反查笔画
   reverse_lookup:
     {}

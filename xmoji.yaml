@@ -6,3 +6,5 @@ patch:
   xmoji:
     __include: xmoji.schema:/translator
     initial_quality: -1
+
+
