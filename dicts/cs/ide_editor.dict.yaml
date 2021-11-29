@@ -4,7 +4,7 @@
 # klchen <klchen0112@gmail.com>
 
 ---
-name: ide
+name: ide_editor
 version: "2021.11.29"
 sort: by_weight
 use_preset_vocabulary: false
