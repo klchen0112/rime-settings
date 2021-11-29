@@ -12,5 +12,5 @@ import_tables:
   - "dicts/math/linear_algebra/linear_algebra_en_word"
   - "dicts/math/probability/probability_en_word"
   - "dicts/cs/algorithm"
-
-
+  - "dicts/cs/ide"
+  - "dicts/cs/company"
