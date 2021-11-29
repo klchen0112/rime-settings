@@ -24,6 +24,7 @@ patch:
       - emoji_suggestion
       - kaomoji_suggestion
       - symbol_suggestion
+      - openfly_enable_2nd_short
     fold_options: true
     abbreviate_options: true
     option_list_separator: "／"
