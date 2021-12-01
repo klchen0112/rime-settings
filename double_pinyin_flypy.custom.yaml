@@ -30,15 +30,16 @@ patch:
     #   reset: 0 #     默认 UTF
   engine:
     translators:
-      - table_translator@easy_en
-      - table_translator@custom_phrase
-      - table_translator@private_phrase
       - punct_translator
       - script_translator
       - lua_translator@date_translator
       - lua_translator@week_translator
       - lua_translator@time_translator
-      # - reverse_lookup_translator # ※ 反查翻譯器，用另一種編碼方案查碼
+      - table_translator@easy_en
+      - table_translator@custom_phrase
+      - table_translator@private_phrase
+      - reverse_lookup_translator # ※ 反查翻譯器，用另一種編碼方案查碼
+      - history_translator@history
     filters:
       # - cjk_minifier #过滤拼音输入法中罕用字
       - simplifier # ※ 繁簡轉換
@@ -131,10 +132,21 @@ patch:
     switch_key:
       Shift_L: commit_code # shift直接上屏，并且保留英文输入状态
       Shift_R: inline_ascii #插入字符，就是已输入的字符为上屏前，按此键后输入法转为英文
+  history:
+    input: ;f
+    size: 1
+    initial_quality: 1
+  recognizer:
+    import_preset: default
+    patterns:
+      uppercase: ""
+      reverse_lookup: "[a-z`]*`+[a-z`]*"
+      punct: ""
   speller:
-    alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA_
-    initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA_
+    alphabet: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA_/;`"
+    initials: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA_;`"
     delimiter: " '"
+    # finals: "/"
     algebra:
       - erase/^xx$/ # 碼表中有幾個拼音不明的字，編碼成xx了，消滅他
       # 模糊音定義
@@ -196,44 +208,10 @@ patch:
       - xform/ui$/V/
       - xform/in$/B/
       - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/ # 最後把雙拼碼全部變小寫
-      # - abbrev/^(.).+$/$1/ # 简拼(首字母)
-  # 反查笔画
+      - fuzz/^(.).+$/$1/ # 简拼(首字母)
   reverse_lookup:
-    {}
-  #   dictionary: stroke
-  #   enable_completion: true
-  #   prefix: "`"
-  #   suffix: "'"
-  #   tips: 〔筆畫〕
-  #   preedit_format:
-  #     - xlit/hspnz/一丨丿丶乙/
-  #   comment_format: ## 笔画提示对应的小鹤双拼
-  #     - derive/^([jqxy])u$/$1v/
-  #     - derive/^([aoe])([ioun])$/$1$1$2/
-  #     - xform/^([aoe])(ng)?$/$1$1$2/
-  #     - xform/iu$/Q/ # 替換聲母鍵，用大寫以防與原有的字母混淆
-  #     - xform/(.)ei$/$1W/
-  #     - xform/uan$/R/
-  #     - xform/[uv]e$/T/
-  #     - xform/un$/Y/
-  #     - xform/^sh/U/
-  #     - xform/^ch/I/
-  #     - xform/^zh/V/
-  #     - xform/uo$/O/
-  #     - xform/ie$/P/
-  #     - xform/i?ong$/S/
-  #     - xform/ing$|uai$/K/
-  #     - xform/(.)ai$/$1D/
-  #     - xform/(.)en$/$1F/
-  #     - xform/(.)eng$/$1G/
-  #     - xform/[iu]ang$/L/
-  #     - xform/(.)ang$/$1H/
-  #     - xform/ian$/M/
-  #     - xform/(.)an$/$1J/
-  #     - xform/(.)ou$/$1Z/
-  #     - xform/[iu]a$/X/
-  #     - xform/iao$/N/
-  #     - xform/(.)ao$/$1C/
-  #     - xform/ui$/V/
-  #     - xform/in$/B/
-  #     - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/ # 最後把雙拼碼全部變小寫
+    dictionary: openfly_reverse
+    # prefix: "`"
+    # suffix: "'"
+    comment_format:
+      - xform/ / /
