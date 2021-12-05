@@ -5,6 +5,8 @@ patch:
     dependencies:
       # - stroke
       - easy_en
+      - openfly_reverse
+      - openfly
   switches:
     - name: ascii_punct
       states: [。，, ．，]
@@ -35,6 +37,7 @@ patch:
       - lua_translator@date_translator
       - lua_translator@week_translator
       - lua_translator@time_translator
+      - table_translator@openfly
       - table_translator@easy_en
       - table_translator@custom_phrase
       - table_translator@private_phrase
@@ -85,7 +88,7 @@ patch:
     tips: all
   # 自定义符号上屏
   punctuator:
-    import_preset: symbols
+    import_preset: default
   # "engine/translators/@5": table_translator@custom_phrase
   grammar:
     language: zh-hans-t-essay-bgw
@@ -121,13 +124,24 @@ patch:
     initial_quality: 1
   easy_en:
     dictionary: easy_en.extended
-    spelling_hints: 9
+    spelling_hints: 3
     enable_completion: true # 是否启用英文输入联想补全
     enable_user_dict: true # 用户词典、词序自动调频
     enable_encoder: true # 自动造词
     enable_sentence: true # 自动造句
-    encode_commit_history: true # 对已上屏的内容自动造词
+    encode_commit_history: true # z对已上屏的内容自动造词
     initial_quality: -0.5
+  openfly:
+    dictionary: openfly
+    enable_charset_filter: false
+    enable_sentence: false
+    enable_completion: false
+    enable_user_dict: false
+    encode_commit_history: false # 对已上屏的内容自动造词
+    disable_user_dict_for_patterns:
+      - "^z.*$"
+    initial_quality: 999999
+    spelling_hints: 4
   ascii_composer:
     switch_key:
       Shift_L: commit_code # shift直接上屏，并且保留英文输入状态
@@ -208,10 +222,8 @@ patch:
       - xform/ui$/V/
       - xform/in$/B/
       - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/ # 最後把雙拼碼全部變小寫
-      - fuzz/^(.).+$/$1/ # 简拼(首字母)
+      - abbrev/^(.).+$/$1/ # 简拼(首字母)
   reverse_lookup:
     dictionary: openfly_reverse
-    # prefix: "`"
-    # suffix: "'"
     comment_format:
-      - xform/ / /
+      - "xform/ / /"
