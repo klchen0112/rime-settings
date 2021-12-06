@@ -37,7 +37,7 @@ patch:
       - lua_translator@date_translator
       - lua_translator@week_translator
       - lua_translator@time_translator
-      - table_translator@openfly
+      # - table_translator@openfly
       - table_translator@easy_en
       - table_translator@custom_phrase
       - table_translator@private_phrase
@@ -51,7 +51,7 @@ patch:
       - simplifier@kaomoji_suggestion # 使用颜文字过滤
       - uniquifier # ※ 過濾重複的候選字，有可能來自繁簡轉換
       # - reverse_lookup_filter@reverse_lookup # 提示反查的笔画
-      # - single_char_filter
+      - single_char_filter
     processors:
       - lua_processor@select_character_processor # 以词定字
       - ascii_composer # ※ 處理西文模式及中西文切換
@@ -110,7 +110,7 @@ patch:
     dictionary: ""
     user_dict: custom_phrase
     db_class: stabledb
-    enable_completion: false
+    enable_completion: true
     enable_sentence: false
     # sentence_over_completion: true
     initial_quality: 0.5
@@ -131,17 +131,17 @@ patch:
     enable_sentence: true # 自动造句
     encode_commit_history: true # z对已上屏的内容自动造词
     initial_quality: -0.5
-  openfly:
-    dictionary: openfly
-    enable_charset_filter: false
-    enable_sentence: false
-    enable_completion: false
-    enable_user_dict: false
-    encode_commit_history: false # 对已上屏的内容自动造词
-    disable_user_dict_for_patterns:
-      - "^z.*$"
-    initial_quality: 999999
-    spelling_hints: 4
+  # openfly:
+  #   dictionary: openfly
+  #   enable_charset_filter: false
+  #   enable_sentence: false
+  #   enable_completion: false
+  #   enable_user_dict: false
+  #   encode_commit_history: false # 对已上屏的内容自动造词
+  #   disable_user_dict_for_patterns:
+  #     - "^z.*$"
+  #   initial_quality: 999999
+  #   spelling_hints: 4
   ascii_composer:
     switch_key:
       Shift_L: commit_code # shift直接上屏，并且保留英文输入状态
@@ -223,7 +223,7 @@ patch:
       - xform/in$/B/
       - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/ # 最後把雙拼碼全部變小寫
       - abbrev/^(.).+$/$1/ # 简拼(首字母)
-  reverse_lookup:
-    dictionary: openfly_reverse
-    comment_format:
-      - "xform/ / /"
+  # reverse_lookup:
+  #   dictionary: openfly_reverse
+  #   comment_format:
+  #     - "xform/ / /"
