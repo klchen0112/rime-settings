@@ -11,7 +11,7 @@
 #
 
 ---
-name: double_pinyin_flypy.extended
+name: luna_pinyin.extended
 version: "2021.11.07"
 sort: by_weight #字典初始original或by_weight
 vocabulary: essay-zh-hans
