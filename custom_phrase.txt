@@ -75,6 +75,7 @@ Mac	mac
 iCloud	icloud
 AppleId	appleid
 Touch Bar	touchbar
+Face ID	faceid
 # others
 Keychron	keychron
 WeChat	wechat
