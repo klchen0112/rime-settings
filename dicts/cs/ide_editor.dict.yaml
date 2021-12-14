@@ -8,8 +8,7 @@ name: ide_editor
 version: "2021.11.29"
 sort: by_weight
 use_preset_vocabulary: false
-...
-
+---
 VSCode	vscode	1
 Visual Studio Code	vscode	1
 Clion	clion	1
@@ -22,3 +21,5 @@ DataGrip	datagrip	1
 GoLand	goland	1
 CMake	cmake	1
 MakeFile	makefile	1
+refactor	refactor	1
+bug	bug	1

@@ -86,7 +86,7 @@ patch:
     tips: all
   # 自定义符号上屏
   punctuator:
-    import_preset: default
+    import_preset: punctuation:/ascii_style
   # "engine/translators/@5": table_translator@custom_phrase
   grammar:
     language: zh-hans-t-essay-bgw
@@ -151,9 +151,7 @@ patch:
   recognizer:
     import_preset: default
     patterns:
-      uppercase: ""
       reverse_lookup: "`[a-z]*'?$"
-      punct: ""
   speller:
     alphabet: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA_/;`"
     initials: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA_;`"

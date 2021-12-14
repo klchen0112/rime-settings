@@ -139,6 +139,4 @@ patch:
   recognizer:
     import_preset: default
     patterns:
-      uppercase: ""
       reverse_lookup: "`[a-z]*'?$"
-      punct: ""

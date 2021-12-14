@@ -102,3 +102,5 @@ DOING	doing
 DONE	done
 # APP
 QQ	qq
+# product
+type-C	typec
