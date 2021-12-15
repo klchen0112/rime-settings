@@ -8,9 +8,9 @@ use_preset_vocabulary: false
 
 import_tables:
   - "easy_en"
-  - "dicts/math/calculus/calculus_en_word"
-  - "dicts/math/linear_algebra/linear_algebra_en_word"
-  - "dicts/math/probability/probability_en_word"
-  - "dicts/cs/algorithm"
-  - "dicts/cs/ide_editor"
-  - "dicts/cs/company"
+  # - "dicts/math/calculus/calculus_en_word"
+  # - "dicts/math/linear_algebra/linear_algebra_en_word"
+  # - "dicts/math/probability/probability_en_word"
+  # - "dicts/cs/algorithm"
+  # - "dicts/cs/ide_editor"
+  # - "dicts/cs/company"

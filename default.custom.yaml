@@ -2,7 +2,6 @@
 # encoding: utf-8
 patch:
   schema_list:
-    - schema: luna_pinyin
     - schema: easy_en
     - schema: double_pinyin_flypy
   switcher:
@@ -15,7 +14,6 @@ patch:
       - full_shape
       - ascii_punct
       - simplification
-      - extended_charset
       - zh_hant
       - zh_hans
       - zh_hant_tw
@@ -23,7 +21,6 @@ patch:
       - emoji_suggestion
       - kaomoji_suggestion
       - symbol_suggestion
-      - openfly_enable_2nd_short
     fold_options: true
     abbreviate_options: true
     option_list_separator: "／"
@@ -51,8 +48,4 @@ patch:
       - { when: always, accept: Control+Shift+1, select: double_pinyin_flypy }
       - { when: always, accept: Control+Shift+2, select: easy_en }
       - { when: always, accept: Control+Shift+3, select: luna_pinyin }
-punctuator:
-  full_shape:
-    __include: punctuation:/full_shape
-  half_shape:
-    __include: punctuation:/ascii_style
+
