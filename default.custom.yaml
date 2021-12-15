@@ -51,3 +51,8 @@ patch:
       - { when: always, accept: Control+Shift+1, select: double_pinyin_flypy }
       - { when: always, accept: Control+Shift+2, select: easy_en }
       - { when: always, accept: Control+Shift+3, select: luna_pinyin }
+punctuator:
+  full_shape:
+    __include: punctuation:/full_shape
+  half_shape:
+    __include: punctuation:/ascii_style

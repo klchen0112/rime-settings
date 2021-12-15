@@ -86,7 +86,7 @@ patch:
     tips: all
   # 自定义符号上屏
   punctuator:
-    import_preset: punctuation:/ascii_style
+    import_preset: default
   # "engine/translators/@5": table_translator@custom_phrase
   grammar:
     language: zh-hans-t-essay-bgw
